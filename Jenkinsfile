@@ -3,12 +3,6 @@ pipeline {
 
  stages {
 
-  stage('Clone') {
-   steps {
-    git 'https://github.com/YOUR-USERNAME/ci-node-app.git'
-   }
-  }
-
   stage('Install Dependencies') {
    steps {
     bat 'npm install'
